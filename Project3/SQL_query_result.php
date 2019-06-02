@@ -6,10 +6,9 @@
 <body>
 Demo connection to DataBase using MySQLi in procedural style:​<br>
 <?php
-session_start();
-$servername = ​ .$_POST​["DB"​]; 
-$username = ​ .$_POST​["DBuser"​];
-$password = ​ .$_POST​["DBpass"​];
+$servername = ​$_POST​["DB"​]; 
+$username = ​$_POST​["DBuser"​];
+$password = ​$_POST​["DBpass"​];
 $conn = mysqli_connect($servername, $username, $password);
 if (!$conn) {​ 
 die(​ "Connection failed: "​ . mysqli_connect_error());
